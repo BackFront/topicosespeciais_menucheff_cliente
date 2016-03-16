@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibUDP;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace MenuCheff_Cliente
 {
 	public partial class Form1 : Form
 	{
+		private UDPSocket socket;
 		public Form1()
 		{
 			InitializeComponent();
