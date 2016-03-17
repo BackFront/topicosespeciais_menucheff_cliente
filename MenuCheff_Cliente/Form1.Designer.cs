@@ -34,19 +34,17 @@
 			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.hostdestino = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
+			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// comboBox1
@@ -104,13 +102,6 @@
 			this.button3.UseVisualStyleBackColor = true;
 			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(16, 236);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(190, 20);
-			this.textBox1.TabIndex = 6;
-			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
@@ -133,12 +124,12 @@
 			// tabPage1
 			// 
 			this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+			this.tabPage1.Controls.Add(this.numericUpDown1);
 			this.tabPage1.Controls.Add(this.listBox1);
 			this.tabPage1.Controls.Add(this.comboBox1);
 			this.tabPage1.Controls.Add(this.label1);
 			this.tabPage1.Controls.Add(this.label2);
 			this.tabPage1.Controls.Add(this.button1);
-			this.tabPage1.Controls.Add(this.textBox1);
 			this.tabPage1.Controls.Add(this.button2);
 			this.tabPage1.Controls.Add(this.button3);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -151,10 +142,7 @@
 			// tabPage2
 			// 
 			this.tabPage2.BackColor = System.Drawing.Color.Transparent;
-			this.tabPage2.Controls.Add(this.label5);
-			this.tabPage2.Controls.Add(this.textBox3);
-			this.tabPage2.Controls.Add(this.textBox2);
-			this.tabPage2.Controls.Add(this.label4);
+			this.tabPage2.Controls.Add(this.hostdestino);
 			this.tabPage2.Controls.Add(this.label3);
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
 			this.tabPage2.Name = "tabPage2";
@@ -162,6 +150,13 @@
 			this.tabPage2.Size = new System.Drawing.Size(308, 302);
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "Configurações";
+			// 
+			// hostdestino
+			// 
+			this.hostdestino.Location = new System.Drawing.Point(9, 47);
+			this.hostdestino.Name = "hostdestino";
+			this.hostdestino.Size = new System.Drawing.Size(128, 20);
+			this.hostdestino.TabIndex = 2;
 			// 
 			// label3
 			// 
@@ -172,38 +167,27 @@
 			this.label3.TabIndex = 0;
 			this.label3.Text = "Host destino:";
 			// 
-			// label4
+			// numericUpDown1
 			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(155, 31);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(35, 13);
-			this.label4.TabIndex = 1;
-			this.label4.Text = "Porta:";
-			// 
-			// textBox2
-			// 
-			this.textBox2.Location = new System.Drawing.Point(9, 47);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(128, 20);
-			this.textBox2.TabIndex = 2;
-			// 
-			// textBox3
-			// 
-			this.textBox3.Location = new System.Drawing.Point(158, 47);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(32, 20);
-			this.textBox3.TabIndex = 3;
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Arial Black", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.Location = new System.Drawing.Point(143, 49);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(11, 15);
-			this.label5.TabIndex = 4;
-			this.label5.Text = ":";
+			this.numericUpDown1.Location = new System.Drawing.Point(20, 236);
+			this.numericUpDown1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+			this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+			this.numericUpDown1.Name = "numericUpDown1";
+			this.numericUpDown1.Size = new System.Drawing.Size(186, 20);
+			this.numericUpDown1.TabIndex = 8;
+			this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
 			// 
 			// Form1
 			// 
@@ -218,6 +202,7 @@
 			this.tabPage1.PerformLayout();
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -230,16 +215,13 @@
 		private System.Windows.Forms.ListBox listBox1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TabControl tabControl1;
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabPage tabPage2;
-		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.TextBox hostdestino;
 		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.NumericUpDown numericUpDown1;
 	}
 }
 

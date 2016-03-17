@@ -16,5 +16,10 @@ namespace MenuCheff_Cliente
 			this.id = id;
 			this.name = name;
 		}
+
+		public override string ToString()
+		{
+			return name;
+		}
 	}
 }

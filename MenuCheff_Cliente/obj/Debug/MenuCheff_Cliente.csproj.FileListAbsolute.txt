@@ -12,7 +12,7 @@ C:\Users\aluno.BANDNET\Desktop\topicosespeciais_menucheff_cliente\MenuCheff_Clie
 C:\Users\aluno.BANDNET\Desktop\topicosespeciais_menucheff_cliente\MenuCheff_Cliente\obj\Debug\MenuCheff_Cliente.pdb
 C:\Users\aluno.BANDNET\Desktop\topicosespeciais_menucheff_cliente\MenuCheff_Cliente\bin\Debug\MenuCheff_Cliente.exe
 C:\Users\aluno.BANDNET\Desktop\topicosespeciais_menucheff_cliente\MenuCheff_Cliente\bin\Debug\MenuCheff_Cliente.pdb
-C:\Users\aluno.BANDNET\Desktop\topicosespeciais_menucheff_cliente\MenuCheff_Cliente\obj\Debug\MenuCheff_Cliente.csprojResolveAssemblyReference.cache
 C:\Users\aluno.BANDNET\Desktop\topicosespeciais_menucheff_cliente\MenuCheff_Cliente\obj\Debug\MenuCheff_Cliente.Form1.resources
 C:\Users\aluno.BANDNET\Desktop\topicosespeciais_menucheff_cliente\MenuCheff_Cliente\obj\Debug\MenuCheff_Cliente.Properties.Resources.resources
 C:\Users\aluno.BANDNET\Desktop\topicosespeciais_menucheff_cliente\MenuCheff_Cliente\obj\Debug\MenuCheff_Cliente.csproj.GenerateResource.Cache
+C:\Users\aluno.BANDNET\Desktop\topicosespeciais_menucheff_cliente\MenuCheff_Cliente\bin\Debug\LibUDP.dll
