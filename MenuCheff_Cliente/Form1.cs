@@ -13,7 +13,7 @@ namespace MenuCheff_Cliente
 {
 	public partial class Form1 : Form
 	{
-		private int CozinhaPort = 6200;
+		private int portdestino = 6200;
 		private UDPSocket socket;
 
 		public Form1()
@@ -79,12 +79,14 @@ namespace MenuCheff_Cliente
 			array[1] = byte.Parse(qtdItens.ToString()); //quantidade de itens
 			int j = 2;
 
-			Produto t = (Produto)listBox1.Items[0];
-			MessageBox.Show(t.id.ToString());
+			for (int i = 0; qtdItens > i; ++i)
+			{
+				Produto t = (Produto)listBox1.Items[i];
+				array[j] = byte.Parse(t.id.ToString());
+				++j;
+			}
 
-
-			
-			//socket.Send(data, hostdestino.Text, int.Parse(portadestino.Text));
+			socket.Send(array, hostdestino.Text, portdestino);
 		}
 
 		public void receive(byte[] buffer, int size, string ip, int port)

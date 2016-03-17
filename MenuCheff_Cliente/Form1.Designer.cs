@@ -37,14 +37,15 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.hostdestino = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+			this.debug = new System.Windows.Forms.Label();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
-			this.tabPage2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+			this.tabPage2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// comboBox1
@@ -124,6 +125,7 @@
 			// tabPage1
 			// 
 			this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+			this.tabPage1.Controls.Add(this.debug);
 			this.tabPage1.Controls.Add(this.numericUpDown1);
 			this.tabPage1.Controls.Add(this.listBox1);
 			this.tabPage1.Controls.Add(this.comboBox1);
@@ -138,6 +140,13 @@
 			this.tabPage1.Size = new System.Drawing.Size(308, 302);
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "Pedido";
+			// 
+			// numericUpDown1
+			// 
+			this.numericUpDown1.Location = new System.Drawing.Point(20, 236);
+			this.numericUpDown1.Name = "numericUpDown1";
+			this.numericUpDown1.Size = new System.Drawing.Size(186, 20);
+			this.numericUpDown1.TabIndex = 8;
 			// 
 			// tabPage2
 			// 
@@ -167,27 +176,14 @@
 			this.label3.TabIndex = 0;
 			this.label3.Text = "Host destino:";
 			// 
-			// numericUpDown1
+			// debug
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(20, 236);
-			this.numericUpDown1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-			this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(186, 20);
-			this.numericUpDown1.TabIndex = 8;
-			this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+			this.debug.AutoSize = true;
+			this.debug.Location = new System.Drawing.Point(243, 172);
+			this.debug.Name = "debug";
+			this.debug.Size = new System.Drawing.Size(49, 13);
+			this.debug.TabIndex = 9;
+			this.debug.Text = "_debug_";
 			// 
 			// Form1
 			// 
@@ -200,9 +196,9 @@
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -222,6 +218,7 @@
 		private System.Windows.Forms.TextBox hostdestino;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.NumericUpDown numericUpDown1;
+		private System.Windows.Forms.Label debug;
 	}
 }
 
