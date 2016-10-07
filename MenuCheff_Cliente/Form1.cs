@@ -22,7 +22,6 @@ namespace MenuCheff_Cliente
 
 			socket = new UDPSocket(receive);
 
-			//Dictionary<int, string> lista = new Dictionary<int, string>();
 			comboBox1.Items.Add(new Produto(10, "Vodka"));
 			comboBox1.Items.Add(new Produto(50, "Cerveja"));
 			comboBox1.Items.Add(new Produto(80, "Tequila"));
@@ -55,7 +54,7 @@ namespace MenuCheff_Cliente
 			listBox1.Items.Remove(listBox1.SelectedItem);
 		}
 
-		private void button3_Click(object sender, EventArgs e)
+		private void enviarPedido_Click(object sender, EventArgs e)
 		{
 			decimal a = (decimal)(numericUpDown1.Value);
 
@@ -65,8 +64,6 @@ namespace MenuCheff_Cliente
 			} else {
 				this.build_send();
 			}
-
-
 		}
 
 		private void build_send()
@@ -93,5 +90,8 @@ namespace MenuCheff_Cliente
 		{
 
 		}
+
+
+
 	}
 }

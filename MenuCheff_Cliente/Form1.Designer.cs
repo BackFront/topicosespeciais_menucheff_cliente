@@ -33,15 +33,15 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
+			this.enviarPedido = new System.Windows.Forms.Button();
 			this.label2 = new System.Windows.Forms.Label();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.debug = new System.Windows.Forms.Label();
 			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.hostdestino = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.debug = new System.Windows.Forms.Label();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -93,15 +93,15 @@
 			this.button2.UseVisualStyleBackColor = true;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
-			// button3
+			// enviarPedido
 			// 
-			this.button3.Location = new System.Drawing.Point(16, 262);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(190, 23);
-			this.button3.TabIndex = 5;
-			this.button3.Text = "Enviar pedido";
-			this.button3.UseVisualStyleBackColor = true;
-			this.button3.Click += new System.EventHandler(this.button3_Click);
+			this.enviarPedido.Location = new System.Drawing.Point(16, 262);
+			this.enviarPedido.Name = "enviarPedido";
+			this.enviarPedido.Size = new System.Drawing.Size(190, 23);
+			this.enviarPedido.TabIndex = 5;
+			this.enviarPedido.Text = "Enviar pedido";
+			this.enviarPedido.UseVisualStyleBackColor = true;
+			this.enviarPedido.Click += new System.EventHandler(this.enviarPedido_Click);
 			// 
 			// label2
 			// 
@@ -133,13 +133,22 @@
 			this.tabPage1.Controls.Add(this.label2);
 			this.tabPage1.Controls.Add(this.button1);
 			this.tabPage1.Controls.Add(this.button2);
-			this.tabPage1.Controls.Add(this.button3);
+			this.tabPage1.Controls.Add(this.enviarPedido);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
 			this.tabPage1.Name = "tabPage1";
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage1.Size = new System.Drawing.Size(308, 302);
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "Pedido";
+			// 
+			// debug
+			// 
+			this.debug.AutoSize = true;
+			this.debug.Location = new System.Drawing.Point(243, 172);
+			this.debug.Name = "debug";
+			this.debug.Size = new System.Drawing.Size(49, 13);
+			this.debug.TabIndex = 9;
+			this.debug.Text = "_debug_";
 			// 
 			// numericUpDown1
 			// 
@@ -176,15 +185,6 @@
 			this.label3.TabIndex = 0;
 			this.label3.Text = "Host destino:";
 			// 
-			// debug
-			// 
-			this.debug.AutoSize = true;
-			this.debug.Location = new System.Drawing.Point(243, 172);
-			this.debug.Name = "debug";
-			this.debug.Size = new System.Drawing.Size(49, 13);
-			this.debug.TabIndex = 9;
-			this.debug.Text = "_debug_";
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,7 +210,7 @@
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.ListBox listBox1;
 		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Button enviarPedido;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TabControl tabControl1;
 		private System.Windows.Forms.TabPage tabPage1;
